@@ -6,8 +6,8 @@
     require("src/analyse.php");
 
     $proposition = new proposition();
-    $console     = new console();
-    $navigator   = new navigator();
+    $console = new console();
+    $navigator = new navigator();
 
     // createProposition : name and killName
     $proposition->createProposition("pierre","ciseaux");
@@ -20,13 +20,13 @@
     // resultClient is null
     $resultClient = null;
     // mode console
-    $resultClient   = $console->consoleIn($resultClient,$arrayName);
+    $resultClient = $console->consoleIn($resultClient,$arrayName);
     // mode navigator
-    $resultClient   = $navigator->navigatorIn($resultClient,$arrayName);
+    $resultClient = $navigator->navigatorIn($resultClient,$arrayName);
     // computer proposition
     $resultComputer = computer($arrayName);
     // analyse proposition client and computer
-    $analyseResult  = analyse($resultClient,$resultComputer,$arrayProposition);
+    $analyseResult = analyse($resultClient,$resultComputer,$arrayProposition);
 
     // display console return result game
     $console->consoleOut($resultClient,$resultComputer,$analyseResult);
