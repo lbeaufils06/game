@@ -1,0 +1,17 @@
+#title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+#selection {
+    display: flex;
+}
+
+#image {
+    width: 50%;
+}
+
+#pierre, #feuille, #ciseaux {
+    text-align: center;
+}
